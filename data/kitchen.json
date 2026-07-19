@@ -1,0 +1,65 @@
+{
+  "cupFractions": [
+    { "v": 0.25, "slug": "a-quarter-cup", "disp": "¼ Cup", "word": "a quarter cup" },
+    { "v": 0.333333, "slug": "a-third-of-a-cup", "disp": "⅓ Cup", "word": "a third of a cup" },
+    { "v": 0.5, "slug": "half-a-cup", "disp": "½ Cup", "word": "half a cup" },
+    { "v": 0.666667, "slug": "two-thirds-of-a-cup", "disp": "⅔ Cup", "word": "two-thirds of a cup" },
+    { "v": 0.75, "slug": "three-quarters-of-a-cup", "disp": "¾ Cup", "word": "three-quarters of a cup" },
+    { "v": 1, "slug": "a-cup", "disp": "1 Cup", "word": "a cup" },
+    { "v": 1.5, "slug": "one-and-a-half-cups", "disp": "1½ Cups", "word": "one and a half cups" },
+    { "v": 2, "slug": "2-cups", "disp": "2 Cups", "word": "2 cups" }
+  ],
+  "tbspAmounts": [
+    { "v": 0.5, "slug": "half-a-tablespoon", "disp": "½ Tablespoon" },
+    { "v": 1, "slug": "a-tablespoon", "disp": "1 Tablespoon" },
+    { "v": 2, "slug": "2-tablespoons", "disp": "2 Tablespoons" },
+    { "v": 3, "slug": "3-tablespoons", "disp": "3 Tablespoons" },
+    { "v": 4, "slug": "4-tablespoons", "disp": "4 Tablespoons" }
+  ],
+  "cupsInOz": [2, 4, 6, 8, 12, 16, 24, 32, 64, 128],
+  "bigUnits": [
+    { "slug": "a-pint", "name": "a Pint", "cups": 2 },
+    { "slug": "a-quart", "name": "a Quart", "cups": 4 },
+    { "slug": "a-half-gallon", "name": "a Half Gallon", "cups": 8 },
+    { "slug": "a-gallon", "name": "a Gallon", "cups": 16 }
+  ],
+  "ingredients": [
+    { "slug": "flour", "name": "All-Purpose Flour", "short": "flour", "gPerCup": 120, "emoji": "🌾",
+      "note": "Spoon flour into the cup and level it — scooping straight from the bag packs in up to 25% more flour, the #1 cause of dense baked goods." },
+    { "slug": "sugar", "name": "Granulated Sugar", "short": "sugar", "gPerCup": 200, "emoji": "🍬",
+      "note": "Granulated sugar pours consistently, so cup measurements are reliable — but weight is still faster for scaling recipes." },
+    { "slug": "brown-sugar", "name": "Brown Sugar (packed)", "short": "brown sugar", "gPerCup": 220, "emoji": "🟤",
+      "note": "Brown sugar is always measured packed — pressed firmly into the cup until it holds its shape when turned out." },
+    { "slug": "powdered-sugar", "name": "Powdered Sugar", "short": "powdered sugar", "gPerCup": 120, "emoji": "❄️",
+      "note": "Powdered sugar compacts in the bag; sift or whisk it before measuring by volume, or just weigh it." },
+    { "slug": "butter", "name": "Butter", "short": "butter", "gPerCup": 227, "emoji": "🧈",
+      "note": "In the US, butter math is easiest in sticks: 1 stick = ½ cup = 8 tablespoons = 113 grams." },
+    { "slug": "honey", "name": "Honey", "short": "honey", "gPerCup": 340, "emoji": "🍯",
+      "note": "Honey is heavy — 1.4× the weight of the same volume of water. Grease the measuring cup and it slides right out." },
+    { "slug": "milk", "name": "Milk", "short": "milk", "gPerCup": 240, "emoji": "🥛",
+      "note": "Liquids are the one case where volume is as accurate as weight — a cup of milk is 240 g almost exactly." },
+    { "slug": "rice", "name": "Rice (uncooked)", "short": "uncooked rice", "gPerCup": 185, "emoji": "🍚",
+      "note": "A cup of dry white rice (185 g) cooks up to about 3 cups — plan a quarter to a third of a cup dry per side-dish serving." },
+    { "slug": "oats", "name": "Rolled Oats", "short": "rolled oats", "gPerCup": 90, "emoji": "🥣",
+      "note": "Rolled oats are light — a cup is only about 90 g. Steel-cut oats are denser at about 160 g per cup." },
+    { "slug": "cocoa", "name": "Cocoa Powder", "short": "cocoa powder", "gPerCup": 85, "emoji": "🍫",
+      "note": "Cocoa clumps and compacts like flour — spoon and level it, or weigh it, especially in chocolate cakes where it replaces flour." },
+    { "slug": "peanut-butter", "name": "Peanut Butter", "short": "peanut butter", "gPerCup": 270, "emoji": "🥜",
+      "note": "Sticky and dense — 270 g per cup. A greased or wet measuring cup releases it cleanly." },
+    { "slug": "cornstarch", "name": "Cornstarch", "short": "cornstarch", "gPerCup": 120, "emoji": "🌽",
+      "note": "One tablespoon of cornstarch (7.5 g) thickens about one cup of liquid to sauce consistency." }
+  ],
+  "fToC": [250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500],
+  "cToF": [120, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240],
+  "gasMarks": [
+    { "mark": 1, "f": 275, "c": 135 },
+    { "mark": 2, "f": 300, "c": 150 },
+    { "mark": 3, "f": 325, "c": 165 },
+    { "mark": 4, "f": 350, "c": 175 },
+    { "mark": 5, "f": 375, "c": 190 },
+    { "mark": 6, "f": 400, "c": 205 },
+    { "mark": 7, "f": 425, "c": 220 },
+    { "mark": 8, "f": 450, "c": 230 },
+    { "mark": 9, "f": 475, "c": 245 }
+  ]
+}
