@@ -72,7 +72,7 @@ function layout({ title, desc, urlPath, h1, hero, body, useTool }) {
 </main>
 <footer class="site-foot"><div class="wrap">
   <a href="${BASE}/">Home</a><a href="${BASE}/recipe-scaler/">Recipe Scaler</a><a href="${BASE}/#all">All Conversions</a>
-  <span>· ${SITE} — free cooking &amp; baking conversion tools. US customary measures.</span>
+  <span>· ${SITE} — free cooking &amp; baking conversion tools. US customary measures. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>.</span>
 </div></footer>
 ${useTool ? `<script src="${BASE}/tool.js" defer></script>` : ""}
 </body>
