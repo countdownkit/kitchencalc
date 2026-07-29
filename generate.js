@@ -74,7 +74,7 @@ function layout({ title, desc, urlPath, h1, hero, body, useTool }) {
 </main>
 <footer class="site-foot"><div class="wrap">
   <a href="${BASE}/">Home</a><a href="${BASE}/recipe-scaler/">Recipe Scaler</a><a href="${BASE}/#all">All Conversions</a>
-  <span>· ${SITE} — free cooking &amp; baking conversion tools. US customary measures. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
+  <span>· ${SITE} — free cooking &amp; baking conversion tools. US customary measures. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/about/">About</a> · <a href="https://elevatedprogress.com/contact/">Contact</a> · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
 </div></footer>
 ${useTool ? `<script src="${BASE}/tool.js" defer></script>` : ""}
 </body>
@@ -475,7 +475,21 @@ for (const ing of DATA.ingredients) {
   <h2>Butter</h2>
   ${grid([{ href: "/tablespoons-in-a-stick-of-butter/", label: "Tbsp in a stick" }, { href: "/grams-in-a-stick-of-butter/", label: "Grams in a stick" }, { href: "/sticks-of-butter-in-a-cup/", label: "Sticks in a cup" }, { href: "/sticks-of-butter-in-a-pound/", label: "Sticks in a pound" }])}
   <h2>Oven temperatures</h2>
-  ${grid(DATA.fToC.map(f => ({ href: `/${f}-f-to-c/`, label: `${f}°F → °C` })).concat(DATA.cToF.map(c => ({ href: `/${c}-c-to-f/`, label: `${c}°C → °F` }))))}`;
+  ${grid(DATA.fToC.map(f => ({ href: `/${f}-f-to-c/`, label: `${f}°F → °C` })).concat(DATA.cToF.map(c => ({ href: `/${c}-c-to-f/`, label: `${c}°C → °F` }))))}
+  <h2>How to use these kitchen conversions</h2>
+  <div class="prose">
+    <p>US recipes measure by volume, and the whole system nests neatly once you know the anchors: <b>1 cup = 16 tablespoons = 48 teaspoons = 8 fluid ounces ≈ 237 ml</b>, and <b>1 tablespoon = 3 teaspoons</b>. That last relationship is the one worth memorizing — mixing up the tablespoon (tbsp/T) and teaspoon (tsp/t) abbreviations triples or thirds an ingredient and is the classic reason a batch of cookies comes out wrong. For anything larger, the liquid ladder halves at every step: 1 gallon = 4 quarts = 8 pints = 16 cups.</p>
+    <p>Volume conversions like these hold for <em>any</em> ingredient, wet or dry, because they only describe the size of the measure. Weight is a different story. A cup of all-purpose flour is about 120 grams, but a cup of granulated sugar is roughly 200 grams and a cup of honey is around 340 grams — same volume, very different mass — because grams measure how much stuff is actually in the cup. That is also why dry ingredients are spooned in and leveled off with a straight edge, while liquids are read at eye level in a spouted cup: scooping flour straight from the bag packs in up to 25% extra. When a recipe really needs to be repeatable, weigh the dry ingredients with the <a href="${BASE}/ingredient-converter/">cups ↔ grams converter</a> instead of trusting the scoop.</p>
+    <p>To resize a recipe, the <a href="${BASE}/recipe-scaler/">recipe scaler</a> does the arithmetic for you: paste your ingredient list, set the original servings and the target servings, and every quantity is rescaled into practical kitchen fractions. To halve a recipe, set target servings to half the original (4 → 2); to double it, set them to twice the original (4 → 8). Two things don't scale in a straight line, though — you'll need a larger pan (not just more time) for a doubled cake, and at 3× and beyond it's smart to hold back on salt, spices, and leavening at first, then adjust to taste. For oven settings, use the <a href="${BASE}/350-f-to-c/">°F ↔ °C pages</a>: the formula is (°F − 32) × 5⁄9 = °C, so 350°F lands at 177°C, which you set as 175°C, gas mark 4, or about 160°C on a fan oven.</p>
+  </div>
+  <h2>Frequently asked questions</h2>
+  <div class="prose">
+    <p><b>How many tablespoons are in a cup?</b><br>16 tablespoons. That's also 48 teaspoons or 8 fluid ounces. A half cup is 8 tablespoons and a quarter cup is 4.</p>
+    <p><b>How many teaspoons are in a tablespoon?</b><br>3 teaspoons make 1 tablespoon (about 15 ml). So a half tablespoon is 1½ teaspoons.</p>
+    <p><b>What is 350°F in Celsius?</b><br>350°F is 177°C exactly. On an oven dial that's 175°C, gas mark 4, or roughly 160°C for a fan/convection oven, which runs about 20°C hotter.</p>
+    <p><b>How do I scale a recipe for more (or fewer) servings?</b><br>Open the recipe scaler, enter the original number of servings and the number you want, and paste your ingredients one per line. Every amount is recalculated for you. Doubling means target = 2× original; halving means target = ½× original.</p>
+    <p><b>Why doesn't a cup of flour weigh the same as a cup of sugar?</b><br>Because grams measure weight and cups measure volume. Flour is light and airy (about 120 g per cup) while sugar is dense (about 200 g per cup), so the same cup holds different amounts. For baking accuracy, weigh dry ingredients rather than measuring by volume.</p>
+  </div>`;
   writePage(`/`, layout({ title, desc, urlPath: `/`, h1: `Kitchen Conversion Tools`, hero: "", body }));
 }
 
